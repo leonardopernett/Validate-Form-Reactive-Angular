@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Contact Us</h1>
+  <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+    <input type="text" formControlName="name" placeholder="your name" />
+    <div class="error" *ngIf="name.invalid && (name.dirty || name.touched) ">
+        <p>nombre es requerido</p>
+    </div>
+    <input type="text" formControlName="email"placeholder="your email" />
+    <div class="error" *ngIf="email.invalid && (email.dirty || email.touched) ">
+        <p>email es requerido</p>
+    </div>
+    <textarea rows="3" formControlName="message"placeholder="Message"></textarea>
+    <div class="error" *ngIf="email.invalid && (email.dirty || email.touched) ">
+        <p>email es requerido</p>
+    </div>
+    <button class="btn">send</button>
+  </form>
+</div>

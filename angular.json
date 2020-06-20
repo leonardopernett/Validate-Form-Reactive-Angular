@@ -121,8 +121,13 @@
               "devServerTarget": "form-reactive:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "form-reactive"
 }

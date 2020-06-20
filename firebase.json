@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "form-reactive",
+      "public": "dist/form-reactive",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
